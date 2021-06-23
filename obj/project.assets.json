@@ -2,6 +2,25 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "HarperDb_Net_Client/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "5.0.1",
+          "Microsoft.Extensions.Logging": "5.0.0",
+          "Microsoft.Extensions.Logging.Console": "5.0.0",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "106.11.7",
+          "Serilog": "2.10.0",
+          "Serilog.Extensions.Logging": "3.0.1",
+          "Serilog.Sinks.File": "4.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/HarperNetClient.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/HarperNetClient.dll": {}
+        }
+      },
       "Humanizer.Core/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2074,30 +2093,23 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
-      },
-      "HarperNetClient/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "5.0.1",
-          "Microsoft.Extensions.Logging": "5.0.0",
-          "Microsoft.Extensions.Logging.Console": "5.0.0",
-          "Newtonsoft.Json": "13.0.1",
-          "RestSharp": "106.11.7",
-          "Serilog": "2.10.0",
-          "Serilog.Extensions.Logging": "3.0.1",
-          "Serilog.Sinks.File": "4.1.0"
-        },
-        "compile": {
-          "bin/placeholder/HarperNetClient.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HarperNetClient.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "HarperDb_Net_Client/1.0.0": {
+      "sha512": "LtyLb/XdKedg8Cx4dR2xh97pptiAHR6Kfib3XATRUb4yZju3A67bkUDgFiXrBSWIE20wUDPfizULyb7Fdg7N5g==",
+      "type": "package",
+      "path": "harperdb_net_client/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "harperdb_net_client.1.0.0.nupkg.sha512",
+        "harperdb_net_client.nuspec",
+        "lib/netcoreapp3.1/HarperNetClient.dll",
+        "lib/netcoreapp3.1/HarperNetClient.runtimeconfig.json"
+      ]
+    },
     "Humanizer.Core/2.2.0": {
       "sha512": "rsYXB7+iUPP8AHgQ8JP2UZI2xK2KhjcdGr9E6zX3CsZaTLCaw8M35vaAJRo1rfxeaZEVMuXeaquLVCkZ7JcZ5Q==",
       "type": "package",
@@ -6871,16 +6883,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
-    },
-    "HarperNetClient/1.0.0": {
-      "type": "project",
-      "path": "../HarperNetClient/HarperNetClient.csproj",
-      "msbuildProject": "../HarperNetClient/HarperNetClient.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "HarperNetClient >= 1.0.0",
+      "HarperDb_Net_Client >= 1.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.0",
       "RestSharp >= 106.11.7",
       "Swashbuckle.AspNetCore >= 5.6.3"
@@ -6910,11 +6917,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "/Users/rajatsrivastava/Projects/harperdb-crud/HarperNetClient/HarperNetClient.csproj": {
-              "projectPath": "/Users/rajatsrivastava/Projects/harperdb-crud/HarperNetClient/HarperNetClient.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -6927,6 +6930,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "HarperDb_Net_Client": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[5.0.0, )"

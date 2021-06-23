@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using harperdb_crud.models;
 using harperdb_crud.Utility;
-using HarperNetClient;
 using Newtonsoft.Json;
 using RestSharp;
 

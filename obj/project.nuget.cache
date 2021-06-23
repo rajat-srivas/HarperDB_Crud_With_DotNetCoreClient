@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ePqpc34thAlvj8O0ftOfRJr7dWj6yJRmiM285j8WCANz2q6q51dK1NlaT7z4+gvJwMmbiPS/znpOxfGDLH+J2w==",
+  "dgSpecHash": "4RRWBrVsrSJP4DnuJ+D90QBd0VYdR8YuwTd+cpm866uyOlm7ldj98eaJg6BFirgD7nTeXJcLZSdmyTbz0EOeYQ==",
   "success": true,
   "projectFilePath": "/Users/rajatsrivastava/Projects/harperdb-crud/harperdb-crud/harperdb-crud.csproj",
   "expectedPackageFiles": [
+    "/Users/rajatsrivastava/.nuget/packages/harperdb_net_client/1.0.0/harperdb_net_client.1.0.0.nupkg.sha512",
     "/Users/rajatsrivastava/.nuget/packages/humanizer.core/2.2.0/humanizer.core.2.2.0.nupkg.sha512",
     "/Users/rajatsrivastava/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "/Users/rajatsrivastava/.nuget/packages/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

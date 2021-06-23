@@ -33,7 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "harperdb-crud/1.0.0": {
         "dependencies": {
-          "HarperNetClient": "1.0.0",
+          "HarperDb_Net_Client": "1.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.0",
           "RestSharp": "106.11.7",
           "Swashbuckle.AspNetCore": "5.6.3",
@@ -325,6 +325,27 @@
         },
         "compile": {
           "harperdb-crud.dll": {}
+        }
+      },
+      "HarperDb_Net_Client/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "5.0.1",
+          "Microsoft.Extensions.Logging": "5.0.0",
+          "Microsoft.Extensions.Logging.Console": "5.0.0",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "106.11.7",
+          "Serilog": "2.10.0",
+          "Serilog.Extensions.Logging": "3.0.1",
+          "Serilog.Sinks.File": "4.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/HarperNetClient.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/HarperNetClient.dll": {}
         }
       },
       "Humanizer.Core/2.2.0": {
@@ -1753,24 +1774,6 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
-        }
-      },
-      "HarperNetClient/1.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "5.0.1",
-          "Microsoft.Extensions.Logging": "5.0.0",
-          "Microsoft.Extensions.Logging.Console": "5.0.0",
-          "Newtonsoft.Json": "13.0.1",
-          "RestSharp": "106.11.7",
-          "Serilog": "2.10.0",
-          "Serilog.Extensions.Logging": "3.0.1",
-          "Serilog.Sinks.File": "4.1.0"
-        },
-        "runtime": {
-          "HarperNetClient.dll": {}
-        },
-        "compile": {
-          "HarperNetClient.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -3473,6 +3476,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "HarperDb_Net_Client/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LtyLb/XdKedg8Cx4dR2xh97pptiAHR6Kfib3XATRUb4yZju3A67bkUDgFiXrBSWIE20wUDPfizULyb7Fdg7N5g==",
+      "path": "harperdb_net_client/1.0.0",
+      "hashPath": "harperdb_net_client.1.0.0.nupkg.sha512"
+    },
     "Humanizer.Core/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4368,11 +4378,6 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
-    },
-    "HarperNetClient/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",
